@@ -31,12 +31,9 @@ public class ProyectoCitas extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
-        opcRegistrarPaciente = new javax.swing.JMenuItem();
-        opcRegistrarMedico = new javax.swing.JMenuItem();
-        opcAsignarCita = new javax.swing.JMenuItem();
-        opcConsultarPaciente = new javax.swing.JMenuItem();
-        opcConsultarMédico = new javax.swing.JMenuItem();
-        opcConsultarCita = new javax.swing.JMenuItem();
+        opcPaciente = new javax.swing.JMenuItem();
+        opcMedico = new javax.swing.JMenuItem();
+        opcCitas = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -61,53 +58,29 @@ public class ProyectoCitas extends javax.swing.JFrame {
             }
         });
 
-        opcRegistrarPaciente.setText("Registrar Paciente");
-        opcRegistrarPaciente.addActionListener(new java.awt.event.ActionListener() {
+        opcPaciente.setText("Paciente");
+        opcPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opcRegistrarPacienteActionPerformed(evt);
+                opcPacienteActionPerformed(evt);
             }
         });
-        jMenu2.add(opcRegistrarPaciente);
+        jMenu2.add(opcPaciente);
 
-        opcRegistrarMedico.setText("Registrar Médico");
-        opcRegistrarMedico.addActionListener(new java.awt.event.ActionListener() {
+        opcMedico.setText("Médico");
+        opcMedico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opcRegistrarMedicoActionPerformed(evt);
+                opcMedicoActionPerformed(evt);
             }
         });
-        jMenu2.add(opcRegistrarMedico);
+        jMenu2.add(opcMedico);
 
-        opcAsignarCita.setText("Asignar Cita");
-        opcAsignarCita.addActionListener(new java.awt.event.ActionListener() {
+        opcCitas.setText("Citas");
+        opcCitas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opcAsignarCitaActionPerformed(evt);
+                opcCitasActionPerformed(evt);
             }
         });
-        jMenu2.add(opcAsignarCita);
-
-        opcConsultarPaciente.setText("Consultar Paciente");
-        opcConsultarPaciente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opcConsultarPacienteActionPerformed(evt);
-            }
-        });
-        jMenu2.add(opcConsultarPaciente);
-
-        opcConsultarMédico.setText("Consultar Médico");
-        opcConsultarMédico.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opcConsultarMédicoActionPerformed(evt);
-            }
-        });
-        jMenu2.add(opcConsultarMédico);
-
-        opcConsultarCita.setText("Consultar Cita");
-        opcConsultarCita.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                opcConsultarCitaActionPerformed(evt);
-            }
-        });
-        jMenu2.add(opcConsultarCita);
+        jMenu2.add(opcCitas);
 
         jMenuBar1.add(jMenu2);
 
@@ -127,60 +100,35 @@ public class ProyectoCitas extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void opcRegistrarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcRegistrarPacienteActionPerformed
-        // Vamos a llamar la otra ventana
-        //Creamos un objeto
-        RegistrarPaciente ventanaRegistrarPaciente = new RegistrarPaciente();
-        escritorio.add(ventanaRegistrarPaciente);
-        ventanaRegistrarPaciente.show(); 
-    }//GEN-LAST:event_opcRegistrarPacienteActionPerformed
-
-    private void opcRegistrarMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcRegistrarMedicoActionPerformed
-        // Vamos a llamar la otra ventana
-        //Creamos un objeto
-        RegistrarMedico ventanaRegistrarMedico = new RegistrarMedico();
-        escritorio.add(ventanaRegistrarMedico);
-        ventanaRegistrarMedico.show();
-    }//GEN-LAST:event_opcRegistrarMedicoActionPerformed
-
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
     }//GEN-LAST:event_jMenu2ActionPerformed
 
-    private void opcAsignarCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcAsignarCitaActionPerformed
+    private void opcPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcPacienteActionPerformed
         // TODO add your handling code here:
         // Vamos a llamar la otra ventana
         //Creamos un objeto
-        AsignarCita ventanaAsignarCitaAction = new AsignarCita();
-        escritorio.add(ventanaAsignarCitaAction);
-        ventanaAsignarCitaAction.show();
-    }//GEN-LAST:event_opcAsignarCitaActionPerformed
+        Paciente ventanaPaciente = new Paciente();
+        escritorio.add(ventanaPaciente);
+        ventanaPaciente.show();
+    }//GEN-LAST:event_opcPacienteActionPerformed
 
-    private void opcConsultarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcConsultarPacienteActionPerformed
+    private void opcMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcMedicoActionPerformed
         // TODO add your handling code here:
         // Vamos a llamar la otra ventana
         //Creamos un objeto
-        ConsultarPaciente ventanaConsultarPaciente = new ConsultarPaciente();
-        escritorio.add(ventanaConsultarPaciente);
-        ventanaConsultarPaciente.show();
-    }//GEN-LAST:event_opcConsultarPacienteActionPerformed
+        Medico ventanaMedico = new Medico();
+        escritorio.add(ventanaMedico);
+        ventanaMedico.show();
+    }//GEN-LAST:event_opcMedicoActionPerformed
 
-    private void opcConsultarMédicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcConsultarMédicoActionPerformed
+    private void opcCitasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcCitasActionPerformed
         // TODO add your handling code here:
         // Vamos a llamar la otra ventana
         //Creamos un objeto
-        ConsultarMedico ventanaConsultarMedico = new ConsultarMedico();
-        escritorio.add(ventanaConsultarMedico);
-        ventanaConsultarMedico.show();
-    }//GEN-LAST:event_opcConsultarMédicoActionPerformed
-
-    private void opcConsultarCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcConsultarCitaActionPerformed
-        // TODO add your handling code here:
-        // Vamos a llamar la otra ventana
-        //Creamos un objeto
-        ConsultarCita ventanaConsultarCita = new ConsultarCita();
-        escritorio.add(ventanaConsultarCita);
-        ventanaConsultarCita.show();
-    }//GEN-LAST:event_opcConsultarCitaActionPerformed
+        Cita ventanaCita = new Cita();
+        escritorio.add(ventanaCita);
+        ventanaCita.show();
+    }//GEN-LAST:event_opcCitasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -230,11 +178,8 @@ public class ProyectoCitas extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JMenuItem opcAsignarCita;
-    private javax.swing.JMenuItem opcConsultarCita;
-    private javax.swing.JMenuItem opcConsultarMédico;
-    private javax.swing.JMenuItem opcConsultarPaciente;
-    private javax.swing.JMenuItem opcRegistrarMedico;
-    private javax.swing.JMenuItem opcRegistrarPaciente;
+    private javax.swing.JMenuItem opcCitas;
+    private javax.swing.JMenuItem opcMedico;
+    private javax.swing.JMenuItem opcPaciente;
     // End of variables declaration//GEN-END:variables
 }

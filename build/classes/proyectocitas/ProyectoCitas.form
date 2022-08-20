@@ -17,52 +17,28 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu2ActionPerformed"/>
           </Events>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="opcRegistrarPaciente">
+            <MenuItem class="javax.swing.JMenuItem" name="opcPaciente">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Registrar Paciente"/>
+                <Property name="text" type="java.lang.String" value="Paciente"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcRegistrarPacienteActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcPacienteActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="opcRegistrarMedico">
+            <MenuItem class="javax.swing.JMenuItem" name="opcMedico">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Registrar M&#xe9;dico"/>
+                <Property name="text" type="java.lang.String" value="M&#xe9;dico"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcRegistrarMedicoActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcMedicoActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="opcAsignarCita">
+            <MenuItem class="javax.swing.JMenuItem" name="opcCitas">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Asignar Cita"/>
+                <Property name="text" type="java.lang.String" value="Citas"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcAsignarCitaActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="opcConsultarPaciente">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Consultar Paciente"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcConsultarPacienteActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="opcConsultarM&#xe9;dico">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Consultar M&#xe9;dico"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcConsultarM&#xe9;dicoActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="opcConsultarCita">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Consultar Cita"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcConsultarCitaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="opcCitasActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
