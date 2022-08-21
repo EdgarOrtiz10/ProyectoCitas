@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JTextField" name="fechaNacimient">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fechaNacimientActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox1">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="closable" type="boolean" value="true"/>
     <Property name="iconifiable" type="boolean" value="true"/>
@@ -56,47 +80,68 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="numeroIDconsulta" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelPrimerNombre" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelSegundoNombre" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelPrimerApellido" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelSegundoApellido" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelLugarNacimiento" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelFechaNacimiento" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelDepartamento" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelMunicipio" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelDireccionResidencia" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelRegimen" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelEPS" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabelTipoID" alignment="1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="buttonConsultarPaciente" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="buttonConsultarPaciente1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabelIdPaciente" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelPrimerNombre" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelSegundoNombre" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelPrimerApellido" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelSegundoApellido" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelLugarNacimiento" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelFechaNacimiento" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelTipoID" alignment="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="IdPaciente" alignment="0" max="32767" attributes="0"/>
+                              <Component id="PrimerNombre" alignment="0" pref="195" max="32767" attributes="0"/>
+                              <Component id="SegundoNombre" alignment="0" pref="195" max="32767" attributes="0"/>
+                              <Component id="SegundoApellido" alignment="0" pref="195" max="32767" attributes="0"/>
+                              <Component id="PrimerApellido" alignment="0" pref="195" max="32767" attributes="0"/>
+                              <Component id="LugarNacimiento" alignment="0" pref="195" max="32767" attributes="0"/>
+                              <Component id="TipoID" alignment="0" max="32767" attributes="0"/>
+                              <Component id="fechaNacimiento" alignment="0" min="-2" pref="193" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="idPaciente" alignment="0" max="32767" attributes="0"/>
-                          <Component id="primerNombre" alignment="0" pref="195" max="32767" attributes="0"/>
-                          <Component id="segundoNombre" alignment="0" pref="195" max="32767" attributes="0"/>
-                          <Component id="segundoApellido" alignment="0" pref="195" max="32767" attributes="0"/>
-                          <Component id="primerApellido" alignment="0" pref="195" max="32767" attributes="0"/>
-                          <Component id="lugarNacimiento" alignment="0" pref="195" max="32767" attributes="0"/>
-                          <Component id="municipioNacimiento" alignment="0" pref="195" max="32767" attributes="0"/>
-                          <Component id="fechaNacimient" alignment="0" pref="195" max="32767" attributes="0"/>
-                          <Component id="departamentoNacimiento" alignment="0" pref="195" max="32767" attributes="0"/>
-                          <Component id="direccion" alignment="0" pref="195" max="32767" attributes="0"/>
-                          <Component id="idType" alignment="0" max="32767" attributes="0"/>
-                          <Component id="regime" alignment="0" max="32767" attributes="0"/>
-                          <Component id="eps" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                          <Component id="jLabelDepartamento" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="DepartamentoNacimiento" min="-2" pref="195" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabelMunicipio" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabelDireccionResidencia" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabelRegimen" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabelEPS" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="MunicipioNacimiento" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="DireccionPaciente" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Regimen" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Eps" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
+                                  <Component id="ConsultarPaciente" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="GuardarPaciente" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="EliminarPaciente" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="79" max="32767" attributes="0"/>
+                  <EmptySpace pref="66" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -106,72 +151,73 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelTipoID" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="idType" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TipoID" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="numeroIDconsulta" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="idPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelIdPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="IdPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelPrimerNombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="primerNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="PrimerNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelSegundoNombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="segundoNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="SegundoNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelPrimerApellido" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="primerApellido" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="PrimerApellido" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelSegundoApellido" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="segundoApellido" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="SegundoApellido" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelLugarNacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lugarNacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="LugarNacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="fechaNacimiento" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelFechaNacimiento" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabelFechaNacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="fechaNacimient" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="DepartamentoNacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabelDepartamento" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="departamentoNacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="MunicipioNacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabelMunicipio" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="municipioNacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelDireccionResidencia" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="direccion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="DireccionPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelRegimen" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="regime" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Regimen" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelEPS" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="eps" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Eps" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="buttonConsultarPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="buttonConsultarPaciente1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ConsultarPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="EliminarPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="GuardarPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -184,7 +230,7 @@
             <Property name="text" type="java.lang.String" value="Tipo de Identificaci&#xf3;n:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="numeroIDconsulta">
+        <Component class="javax.swing.JLabel" name="jLabelIdPaciente">
           <Properties>
             <Property name="text" type="java.lang.String" value="Numero de Identificaci&#xf3;n:"/>
           </Properties>
@@ -244,7 +290,7 @@
             <Property name="text" type="java.lang.String" value="EPS:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="idType">
+        <Component class="javax.swing.JComboBox" name="TipoID">
           <Properties>
             <Property name="editable" type="boolean" value="true"/>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
@@ -259,63 +305,58 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="idTypeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TipoIDActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="idPaciente">
+        <Component class="javax.swing.JTextField" name="IdPaciente">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="idPacienteActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IdPacienteActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="primerNombre">
+        <Component class="javax.swing.JTextField" name="PrimerNombre">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="primerNombreActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PrimerNombreActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="segundoNombre">
+        <Component class="javax.swing.JTextField" name="SegundoNombre">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="segundoNombreActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SegundoNombreActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="primerApellido">
+        <Component class="javax.swing.JTextField" name="PrimerApellido">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="primerApellidoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PrimerApellidoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="segundoApellido">
+        <Component class="javax.swing.JTextField" name="SegundoApellido">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="segundoApellidoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SegundoApellidoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="lugarNacimiento">
+        <Component class="javax.swing.JTextField" name="LugarNacimiento">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lugarNacimientoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LugarNacimientoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="municipioNacimiento">
+        <Component class="javax.swing.JTextField" name="MunicipioNacimiento">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="municipioNacimientoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MunicipioNacimientoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="fechaNacimient">
+        <Component class="javax.swing.JTextField" name="DepartamentoNacimiento">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fechaNacimientActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DepartamentoNacimientoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="departamentoNacimiento">
+        <Component class="javax.swing.JTextField" name="DireccionPaciente">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="departamentoNacimientoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DireccionPacienteActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="direccion">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="direccionActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JComboBox" name="regime">
+        <Component class="javax.swing.JComboBox" name="Regimen">
           <Properties>
             <Property name="editable" type="boolean" value="true"/>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
@@ -328,13 +369,13 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="regimeActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RegimenActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JComboBox" name="eps">
+        <Component class="javax.swing.JComboBox" name="Eps">
           <Properties>
             <Property name="editable" type="boolean" value="true"/>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
@@ -349,27 +390,37 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="epsActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EpsActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="buttonConsultarPaciente">
+        <Component class="javax.swing.JButton" name="ConsultarPaciente">
           <Properties>
             <Property name="text" type="java.lang.String" value="Consultar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonConsultarPacienteActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ConsultarPacienteActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="buttonConsultarPaciente1">
+        <Component class="javax.swing.JButton" name="EliminarPaciente">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Eliminar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EliminarPacienteActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="GuardarPaciente">
           <Properties>
             <Property name="text" type="java.lang.String" value="Guardar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonConsultarPaciente1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GuardarPacienteActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="fechaNacimiento">
         </Component>
       </SubComponents>
     </Container>

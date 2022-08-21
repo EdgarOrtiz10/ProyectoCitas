@@ -26,9 +26,12 @@ public class Paciente extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        fechaNacimient = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabelTipoID = new javax.swing.JLabel();
-        numeroIDconsulta = new javax.swing.JLabel();
+        jLabelIdPaciente = new javax.swing.JLabel();
         jLabelPrimerNombre = new javax.swing.JLabel();
         jLabelSegundoNombre = new javax.swing.JLabel();
         jLabelPrimerApellido = new javax.swing.JLabel();
@@ -40,21 +43,30 @@ public class Paciente extends javax.swing.JInternalFrame {
         jLabelDireccionResidencia = new javax.swing.JLabel();
         jLabelRegimen = new javax.swing.JLabel();
         jLabelEPS = new javax.swing.JLabel();
-        idType = new javax.swing.JComboBox<>();
-        idPaciente = new javax.swing.JTextField();
-        primerNombre = new javax.swing.JTextField();
-        segundoNombre = new javax.swing.JTextField();
-        primerApellido = new javax.swing.JTextField();
-        segundoApellido = new javax.swing.JTextField();
-        lugarNacimiento = new javax.swing.JTextField();
-        municipioNacimiento = new javax.swing.JTextField();
-        fechaNacimient = new javax.swing.JTextField();
-        departamentoNacimiento = new javax.swing.JTextField();
-        direccion = new javax.swing.JTextField();
-        regime = new javax.swing.JComboBox<>();
-        eps = new javax.swing.JComboBox<>();
-        buttonConsultarPaciente = new javax.swing.JButton();
-        buttonConsultarPaciente1 = new javax.swing.JButton();
+        TipoID = new javax.swing.JComboBox<>();
+        IdPaciente = new javax.swing.JTextField();
+        PrimerNombre = new javax.swing.JTextField();
+        SegundoNombre = new javax.swing.JTextField();
+        PrimerApellido = new javax.swing.JTextField();
+        SegundoApellido = new javax.swing.JTextField();
+        LugarNacimiento = new javax.swing.JTextField();
+        MunicipioNacimiento = new javax.swing.JTextField();
+        DepartamentoNacimiento = new javax.swing.JTextField();
+        DireccionPaciente = new javax.swing.JTextField();
+        Regimen = new javax.swing.JComboBox<>();
+        Eps = new javax.swing.JComboBox<>();
+        ConsultarPaciente = new javax.swing.JButton();
+        EliminarPaciente = new javax.swing.JButton();
+        GuardarPaciente = new javax.swing.JButton();
+        fechaNacimiento = new com.toedter.calendar.JDateChooser();
+
+        fechaNacimient.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fechaNacimientActionPerformed(evt);
+            }
+        });
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setClosable(true);
         setIconifiable(true);
@@ -66,7 +78,7 @@ public class Paciente extends javax.swing.JInternalFrame {
 
         jLabelTipoID.setText("Tipo de Identificación:");
 
-        numeroIDconsulta.setText("Numero de Identificación:");
+        jLabelIdPaciente.setText("Numero de Identificación:");
 
         jLabelPrimerNombre.setText("Primer Nombre:");
 
@@ -90,101 +102,102 @@ public class Paciente extends javax.swing.JInternalFrame {
 
         jLabelEPS.setText("EPS:");
 
-        idType.setEditable(true);
-        idType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Cedula Ciudadania", "Tarjeta de Identidad", "Cedula de Extrangería", "Pasaporte", " " }));
-        idType.addActionListener(new java.awt.event.ActionListener() {
+        TipoID.setEditable(true);
+        TipoID.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Cedula Ciudadania", "Tarjeta de Identidad", "Cedula de Extrangería", "Pasaporte", " " }));
+        TipoID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                idTypeActionPerformed(evt);
+                TipoIDActionPerformed(evt);
             }
         });
 
-        idPaciente.addActionListener(new java.awt.event.ActionListener() {
+        IdPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                idPacienteActionPerformed(evt);
+                IdPacienteActionPerformed(evt);
             }
         });
 
-        primerNombre.addActionListener(new java.awt.event.ActionListener() {
+        PrimerNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                primerNombreActionPerformed(evt);
+                PrimerNombreActionPerformed(evt);
             }
         });
 
-        segundoNombre.addActionListener(new java.awt.event.ActionListener() {
+        SegundoNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                segundoNombreActionPerformed(evt);
+                SegundoNombreActionPerformed(evt);
             }
         });
 
-        primerApellido.addActionListener(new java.awt.event.ActionListener() {
+        PrimerApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                primerApellidoActionPerformed(evt);
+                PrimerApellidoActionPerformed(evt);
             }
         });
 
-        segundoApellido.addActionListener(new java.awt.event.ActionListener() {
+        SegundoApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                segundoApellidoActionPerformed(evt);
+                SegundoApellidoActionPerformed(evt);
             }
         });
 
-        lugarNacimiento.addActionListener(new java.awt.event.ActionListener() {
+        LugarNacimiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lugarNacimientoActionPerformed(evt);
+                LugarNacimientoActionPerformed(evt);
             }
         });
 
-        municipioNacimiento.addActionListener(new java.awt.event.ActionListener() {
+        MunicipioNacimiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                municipioNacimientoActionPerformed(evt);
+                MunicipioNacimientoActionPerformed(evt);
             }
         });
 
-        fechaNacimient.addActionListener(new java.awt.event.ActionListener() {
+        DepartamentoNacimiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fechaNacimientActionPerformed(evt);
+                DepartamentoNacimientoActionPerformed(evt);
             }
         });
 
-        departamentoNacimiento.addActionListener(new java.awt.event.ActionListener() {
+        DireccionPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                departamentoNacimientoActionPerformed(evt);
+                DireccionPacienteActionPerformed(evt);
             }
         });
 
-        direccion.addActionListener(new java.awt.event.ActionListener() {
+        Regimen.setEditable(true);
+        Regimen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Subsidiado", "Contributivo ", " " }));
+        Regimen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                direccionActionPerformed(evt);
+                RegimenActionPerformed(evt);
             }
         });
 
-        regime.setEditable(true);
-        regime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Subsidiado", "Contributivo ", " " }));
-        regime.addActionListener(new java.awt.event.ActionListener() {
+        Eps.setEditable(true);
+        Eps.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Nueva EPS", "EPS Sura", "Sisben ", "Coosalud ", " " }));
+        Eps.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regimeActionPerformed(evt);
+                EpsActionPerformed(evt);
             }
         });
 
-        eps.setEditable(true);
-        eps.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Nueva EPS", "EPS Sura", "Sisben ", "Coosalud ", " " }));
-        eps.addActionListener(new java.awt.event.ActionListener() {
+        ConsultarPaciente.setText("Consultar");
+        ConsultarPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                epsActionPerformed(evt);
+                ConsultarPacienteActionPerformed(evt);
             }
         });
 
-        buttonConsultarPaciente.setText("Consultar");
-        buttonConsultarPaciente.addActionListener(new java.awt.event.ActionListener() {
+        EliminarPaciente.setText("Eliminar");
+        EliminarPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonConsultarPacienteActionPerformed(evt);
+                EliminarPacienteActionPerformed(evt);
             }
         });
 
-        buttonConsultarPaciente1.setText("Guardar");
-        buttonConsultarPaciente1.addActionListener(new java.awt.event.ActionListener() {
+        GuardarPaciente.setText("Guardar");
+        GuardarPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonConsultarPaciente1ActionPerformed(evt);
+                GuardarPacienteActionPerformed(evt);
             }
         });
 
@@ -193,42 +206,56 @@ public class Paciente extends javax.swing.JInternalFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(numeroIDconsulta)
-                    .addComponent(jLabelPrimerNombre, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelSegundoNombre, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelPrimerApellido, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelSegundoApellido, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelLugarNacimiento, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelFechaNacimiento, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelDepartamento, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelMunicipio, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelDireccionResidencia, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelRegimen, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelEPS, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelTipoID, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(buttonConsultarPaciente)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(buttonConsultarPaciente1))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(idPaciente)
-                        .addComponent(primerNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                        .addComponent(segundoNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                        .addComponent(segundoApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                        .addComponent(primerApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                        .addComponent(lugarNacimiento, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                        .addComponent(municipioNacimiento, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                        .addComponent(fechaNacimient, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                        .addComponent(departamentoNacimiento, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                        .addComponent(direccion, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                        .addComponent(idType, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(regime, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(eps, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(79, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelIdPaciente)
+                            .addComponent(jLabelPrimerNombre, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabelSegundoNombre, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabelPrimerApellido, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabelSegundoApellido, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabelLugarNacimiento, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabelFechaNacimiento, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabelTipoID, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(IdPaciente)
+                            .addComponent(PrimerNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                            .addComponent(SegundoNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                            .addComponent(SegundoApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                            .addComponent(PrimerApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                            .addComponent(LugarNacimiento, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                            .addComponent(TipoID, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(fechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addComponent(jLabelDepartamento)
+                        .addGap(18, 18, 18)
+                        .addComponent(DepartamentoNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelMunicipio, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabelDireccionResidencia, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabelRegimen, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabelEPS, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(MunicipioNacimiento)
+                                    .addComponent(DireccionPaciente)
+                                    .addComponent(Regimen, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Eps, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(106, 106, 106)
+                                .addComponent(ConsultarPaciente)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(GuardarPaciente)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(EliminarPaciente)))))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -236,59 +263,60 @@ public class Paciente extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelTipoID)
-                    .addComponent(idType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TipoID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(numeroIDconsulta)
-                    .addComponent(idPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelIdPaciente)
+                    .addComponent(IdPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelPrimerNombre)
-                    .addComponent(primerNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(PrimerNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelSegundoNombre)
-                    .addComponent(segundoNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(SegundoNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelPrimerApellido)
-                    .addComponent(primerApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(PrimerApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelSegundoApellido)
-                    .addComponent(segundoApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(SegundoApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelLugarNacimiento)
-                    .addComponent(lugarNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LugarNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(fechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelFechaNacimiento))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelFechaNacimiento)
-                    .addComponent(fechaNacimient, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(DepartamentoNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelDepartamento))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelDepartamento)
-                    .addComponent(departamentoNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelMunicipio)
-                    .addComponent(municipioNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(MunicipioNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelMunicipio))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelDireccionResidencia)
-                    .addComponent(direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(DireccionPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelRegimen)
-                    .addComponent(regime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Regimen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelEPS)
-                    .addComponent(eps, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Eps, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonConsultarPaciente)
-                    .addComponent(buttonConsultarPaciente1))
+                    .addComponent(ConsultarPaciente)
+                    .addComponent(EliminarPaciente)
+                    .addComponent(GuardarPaciente))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -312,80 +340,96 @@ public class Paciente extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void idTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idTypeActionPerformed
+    private void TipoIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TipoIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_idTypeActionPerformed
+    }//GEN-LAST:event_TipoIDActionPerformed
 
-    private void idPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idPacienteActionPerformed
+    private void IdPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IdPacienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_idPacienteActionPerformed
+    }//GEN-LAST:event_IdPacienteActionPerformed
 
-    private void primerNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_primerNombreActionPerformed
+    private void PrimerNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrimerNombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_primerNombreActionPerformed
+    }//GEN-LAST:event_PrimerNombreActionPerformed
 
-    private void segundoNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundoNombreActionPerformed
+    private void SegundoNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SegundoNombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_segundoNombreActionPerformed
+    }//GEN-LAST:event_SegundoNombreActionPerformed
 
-    private void primerApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_primerApellidoActionPerformed
+    private void PrimerApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrimerApellidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_primerApellidoActionPerformed
+    }//GEN-LAST:event_PrimerApellidoActionPerformed
 
-    private void segundoApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segundoApellidoActionPerformed
+    private void SegundoApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SegundoApellidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_segundoApellidoActionPerformed
+    }//GEN-LAST:event_SegundoApellidoActionPerformed
 
-    private void lugarNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lugarNacimientoActionPerformed
+    private void LugarNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LugarNacimientoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_lugarNacimientoActionPerformed
+    }//GEN-LAST:event_LugarNacimientoActionPerformed
 
-    private void municipioNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_municipioNacimientoActionPerformed
+    private void MunicipioNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MunicipioNacimientoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_municipioNacimientoActionPerformed
+    }//GEN-LAST:event_MunicipioNacimientoActionPerformed
+
+    private void DepartamentoNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepartamentoNacimientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DepartamentoNacimientoActionPerformed
+
+    private void DireccionPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DireccionPacienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DireccionPacienteActionPerformed
+
+    private void RegimenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegimenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RegimenActionPerformed
+
+    private void EpsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EpsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EpsActionPerformed
+
+    private void ConsultarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsultarPacienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ConsultarPacienteActionPerformed
+
+    private void EliminarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarPacienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EliminarPacienteActionPerformed
+
+    private void GuardarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GuardarPacienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GuardarPacienteActionPerformed
 
     private void fechaNacimientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechaNacimientActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_fechaNacimientActionPerformed
 
-    private void departamentoNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departamentoNacimientoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_departamentoNacimientoActionPerformed
-
-    private void direccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_direccionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_direccionActionPerformed
-
-    private void regimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regimeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_regimeActionPerformed
-
-    private void epsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_epsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_epsActionPerformed
-
-    private void buttonConsultarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConsultarPacienteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonConsultarPacienteActionPerformed
-
-    private void buttonConsultarPaciente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConsultarPaciente1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonConsultarPaciente1ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonConsultarPaciente;
-    private javax.swing.JButton buttonConsultarPaciente1;
-    private javax.swing.JTextField departamentoNacimiento;
-    private javax.swing.JTextField direccion;
-    private javax.swing.JComboBox<String> eps;
+    private javax.swing.JButton ConsultarPaciente;
+    private javax.swing.JTextField DepartamentoNacimiento;
+    private javax.swing.JTextField DireccionPaciente;
+    private javax.swing.JButton EliminarPaciente;
+    private javax.swing.JComboBox<String> Eps;
+    private javax.swing.JButton GuardarPaciente;
+    private javax.swing.JTextField IdPaciente;
+    private javax.swing.JTextField LugarNacimiento;
+    private javax.swing.JTextField MunicipioNacimiento;
+    private javax.swing.JTextField PrimerApellido;
+    private javax.swing.JTextField PrimerNombre;
+    private javax.swing.JComboBox<String> Regimen;
+    private javax.swing.JTextField SegundoApellido;
+    private javax.swing.JTextField SegundoNombre;
+    private javax.swing.JComboBox<String> TipoID;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JTextField fechaNacimient;
-    private javax.swing.JTextField idPaciente;
-    private javax.swing.JComboBox<String> idType;
+    private com.toedter.calendar.JDateChooser fechaNacimiento;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabelDepartamento;
     private javax.swing.JLabel jLabelDireccionResidencia;
     private javax.swing.JLabel jLabelEPS;
     private javax.swing.JLabel jLabelFechaNacimiento;
+    private javax.swing.JLabel jLabelIdPaciente;
     private javax.swing.JLabel jLabelLugarNacimiento;
     private javax.swing.JLabel jLabelMunicipio;
     private javax.swing.JLabel jLabelPrimerApellido;
@@ -395,13 +439,5 @@ public class Paciente extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabelSegundoNombre;
     private javax.swing.JLabel jLabelTipoID;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField lugarNacimiento;
-    private javax.swing.JTextField municipioNacimiento;
-    private javax.swing.JLabel numeroIDconsulta;
-    private javax.swing.JTextField primerApellido;
-    private javax.swing.JTextField primerNombre;
-    private javax.swing.JComboBox<String> regime;
-    private javax.swing.JTextField segundoApellido;
-    private javax.swing.JTextField segundoNombre;
     // End of variables declaration//GEN-END:variables
 }
