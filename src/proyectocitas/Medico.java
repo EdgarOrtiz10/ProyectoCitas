@@ -56,14 +56,15 @@ public class Medico extends javax.swing.JInternalFrame {
         checkbox2 = new java.awt.Checkbox();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("Consultar Médico");
+        setTitle("Médico");
 
-        jPanelConsultarMedico.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos del Médico Nuevo"));
+        jPanelConsultarMedico.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos del Médico"));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Cedula de Ciudadania", "Cedula de Extrangería", "Pasaporte" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -207,6 +208,13 @@ public class Medico extends javax.swing.JInternalFrame {
             }
         });
 
+        jButton3.setText("Eliminar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanelConsultarMedicoLayout = new javax.swing.GroupLayout(jPanelConsultarMedico);
         jPanelConsultarMedico.setLayout(jPanelConsultarMedicoLayout);
         jPanelConsultarMedicoLayout.setHorizontalGroup(
@@ -232,29 +240,30 @@ public class Medico extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanelConsultarMedicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelConsultarMedicoLayout.createSequentialGroup()
-                        .addGroup(jPanelConsultarMedicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(primerNombre)
-                            .addComponent(primerNombre1)
-                            .addComponent(primerNombre2)
-                            .addComponent(primerNombre3)
-                            .addComponent(primerNombre4)
-                            .addComponent(jComboBox1, 0, 202, Short.MAX_VALUE)
-                            .addComponent(jComboBox2, 0, 1, Short.MAX_VALUE)
-                            .addComponent(primerNombre5)
-                            .addComponent(primerNombre6)
-                            .addComponent(primerNombre7)
-                            .addComponent(primerNombre8)
-                            .addComponent(primerNombre9))
-                        .addGap(78, 78, 78))
-                    .addGroup(jPanelConsultarMedicoLayout.createSequentialGroup()
                         .addComponent(checkbox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(checkbox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelConsultarMedicoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(186, 186, 186))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelConsultarMedicoLayout.createSequentialGroup()
+                        .addGroup(jPanelConsultarMedicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanelConsultarMedicoLayout.createSequentialGroup()
+                                .addComponent(jButton1)
+                                .addGap(27, 27, 27)
+                                .addComponent(jButton3)
+                                .addGap(8, 8, 8))
+                            .addComponent(primerNombre, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(primerNombre1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(primerNombre2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(primerNombre3, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(primerNombre4, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, 295, Short.MAX_VALUE)
+                            .addComponent(jComboBox2, javax.swing.GroupLayout.Alignment.LEADING, 0, 1, Short.MAX_VALUE)
+                            .addComponent(primerNombre5, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(primerNombre6, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(primerNombre7, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(primerNombre8, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(primerNombre9, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(78, 78, 78))))
             .addGroup(jPanelConsultarMedicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanelConsultarMedicoLayout.createSequentialGroup()
                     .addGap(176, 176, 176)
@@ -317,9 +326,11 @@ public class Medico extends javax.swing.JInternalFrame {
                     .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(checkbox1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(checkbox2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addGap(24, 24, 24)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addGroup(jPanelConsultarMedicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton3))
+                .addContainerGap())
             .addGroup(jPanelConsultarMedicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelConsultarMedicoLayout.createSequentialGroup()
                     .addContainerGap(466, Short.MAX_VALUE)
@@ -340,6 +351,8 @@ public class Medico extends javax.swing.JInternalFrame {
                 .addComponent(jPanelConsultarMedico, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
+
+        getAccessibleContext().setAccessibleName("Médico\n");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -400,12 +413,17 @@ public class Medico extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Checkbox checkbox1;
     private java.awt.Checkbox checkbox2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
