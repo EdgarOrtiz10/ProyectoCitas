@@ -49,9 +49,6 @@ public class Paciente {
         this.setDireccionPaciente(direccionPaciente.toUpperCase());
         this.setRegimen(regimen.toUpperCase());
         this.setEps(eps.toUpperCase());
-        
-
-        
     }
 
     /**
